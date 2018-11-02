@@ -5,7 +5,9 @@
     <title>Device List</title>
 </head>
 <body>
-    <h1 th:text = "${result}"></h1>
+    <h1 th:each = "${deviceList}">
+        <h3 th:text = "${deviceList.hostname}"> <h3>
+    </h1>
 
 </body>
 </html>
